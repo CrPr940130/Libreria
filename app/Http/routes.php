@@ -1,7 +1,8 @@
 <?php
 
 Route::get('/', function () {
-    return view("home");
+    //return view("home");
+    return "usando git sssss";
 });
 
 Route::post('/form','ambientesController@show');
