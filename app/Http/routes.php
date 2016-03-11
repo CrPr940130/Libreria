@@ -1,11 +1,15 @@
 <?php
 
 Route::get('/', function () {
-    return view("home");
-    //return "usando git";
+    return view("webside.index");
 });
 
-Route::post('/form','ambientesController@show');
+Route::get('/tienda', function () {
+    return view("webside.tienda");
+});
+
+Route::post('/form','ambientesController@store');
 
 //controladores
 Route::get('/controller','ambientesController@index'); //nombreControlador @ nombreMetodo
+
